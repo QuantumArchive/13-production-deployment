@@ -8,6 +8,7 @@
     $.get('/github/users/codefellows-portland-301d6/repos' +
           '?per_page=10&sort=updated')
           .done(function(data) {
+            console.log(data);
             reposObj.allRepos = data;
           }).done(callback);
   };
